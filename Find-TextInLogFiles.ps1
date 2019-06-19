@@ -8,7 +8,7 @@
 .PARAMETER copy 
     Optional flag, if you want to copy the files in which the text is found into the current directory
 .EXAMPLE
-    ./Find-TextInLogFiles.ps1 Samwell C:\Counters\LogFiles
+    ./Find-TextInLogFiles.ps1 Error C:\Counters\LogFiles
 #>
 [CmdletBinding()]
 Param(
