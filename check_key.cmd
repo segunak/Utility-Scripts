@@ -84,7 +84,6 @@ if "!V_VALUE!"=="AT -> <A> for Account; <T> for Transit; <AT> for both; <> for n
 )
 exit /b !ERRLEV!
 
-
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: :GET_REG_VALUE_64
 :: Gets the reg key information for a 64 bit system. 
