@@ -21,3 +21,10 @@ for /f %%F in ('dir /b /a-d ^| findstr /vile ".txt .k3z .md .exe"') do del "%%F"
 
 :: Delete the obj folder. Used Post Build mainly because I hate that folder 
 RD /S /Q "$(ProjectDir)obj\"
+
+:: Delete all files except those matching the extensions and delete the OBJ folder, but only
+:: for the assigned Release type. You can't debug an exectuable in a folder with this running.
+if $(ConfigurationName) == Release (
+for /f %%F in ('dir /b /a-d ^| findstr /vile ".txt  .k3z .md .exe"') do del "%%F"
+RD /S /Q "$(ProjectDir)obj\"
+) 
