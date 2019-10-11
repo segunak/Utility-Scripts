@@ -3,7 +3,7 @@ setLocal enableDelayedExpansion
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: check_key.cmd
 ::
-:: Checks to see if an RSS machine's registry key value matches a desired
+:: Checks to see if a registry key value matches a desired
 :: value indicating the ability to read checks with dashes in their numbers. 
 :: 
 :: Ex: check_key HOSTNAME
