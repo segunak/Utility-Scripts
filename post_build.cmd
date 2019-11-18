@@ -5,10 +5,9 @@
 :: useful. 
 :: 
 :: This script isn't meant to be called. Just a place to store snippets. 
-:: Note: You don't really need the cd $(DIRECTORY) with Visual Studio singe it 
+:: Note: You don't really need the cd $(DIRECTORY) with Visual Studio since it 
 :: sets your directory to your set configuration folder (debug or release). But 
-:: it's there for safety. You really don't want to run any of this accidentally 
-:: in the wrong folder. 
+:: it's there for safety.
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :: Delete all files in the output folder except those with the .exe extension. 
@@ -28,3 +27,16 @@ if $(ConfigurationName) == Release (
 for /f %%F in ('dir /b /a-d ^| findstr /vile ".txt  .k3z .md .exe"') do del "%%F"
 RD /S /Q "$(ProjectDir)obj\"
 ) 
+
+:: Copy a file from one folder to another based on what configuration the build is running.
+:: /q for xcopy is quiet, /y means it won't prompt if it's overwriting an existing file in the 
+:: target folder. 
+if $(ConfigurationName) == Release (
+xcopy "$(ProjectDir)bin\release\MyCoolFileThatIWantCopied.exe" "$(SolutionDir)FolderThatIWantFileCopiedTo" /q /y
+)
+
+:: Copy a file from one one location to another based on relative path. The ../ is taking
+:: you up from the directory of the solution. 
+if $(ConfigurationName) == Release (
+xcopy "$(SolutionDir)..\..\..\bin\release\MyCoolFile.exe" "$(SolutionDir)MyDesiredFolderLocation" /q /y
+)
