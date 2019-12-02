@@ -36,6 +36,8 @@ xcopy "$(ProjectDir)bin\release\MyCoolFileThatIWantCopied.exe" "$(SolutionDir)Fo
 )
 
 :: Another example of copying file from a folder to another based on type of config.
+:: The for/R stuff is deleting non executable files. That is dangerous sometimes, that
+:: command looks through all sub folders in the directory as well. 
 if $(ConfigurationName) == Release (
 for /R %%f in (*) do (if not "%%~xf"==".exe" del "%%~f")
 xcopy "$(ProjectDir)bin\Release\GrabObject.exe" "C:\RSS-Local\Misc\Utilities" /q /y
