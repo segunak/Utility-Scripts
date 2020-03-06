@@ -1,7 +1,7 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: post_build.cmd
 ::
-:: A collection of Post Build events for Visual Studio projets that I have found
+:: A collection of Post Build events for Visual Studio projects that I have found
 :: useful. 
 :: 
 :: This script isn't meant to be called. Just a place to store snippets. 
