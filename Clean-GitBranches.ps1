@@ -1,0 +1,1 @@
+@(git branch | Select-String -Pattern "[^(*?)\s? master]") | ForEach-Object{$_.Line.Trim()} | %{git branch -D $_}
