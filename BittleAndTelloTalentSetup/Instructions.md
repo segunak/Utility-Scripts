@@ -20,6 +20,13 @@ Note, the Bittle X uses `BiBoard_V0_1` or `BiBoard_V0_2` as the board version.
    2. If you're coding the Tello Talent drone, you need to make sure the module for that is imported into Mind+. Follow the instructions here to do that. [Mind Plus Setup For Tello Talent](https://mindplus.dfrobot.com/RMTT)
 2. Once the module is imported, connect the Bittle X or Tello Talent. The Bittle connects over bluetooth, the Tello Talent connects via WiFi.
 
+## Workshop Ideas
+
+Use the resources below to get ideas on using the Petoi Bittle and Tello Talent for workshops. 
+
+* [Petoi Bittle Community](https://www.petoi.com/pages/petoi-open-source-extensions-user-demos-and-hacks)
+* 
+
 ## Troubleshooting
 
 ### Petoi Bittle Not Responding To Commands
