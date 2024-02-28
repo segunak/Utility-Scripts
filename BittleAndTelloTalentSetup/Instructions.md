@@ -33,6 +33,11 @@ Use the resources below to get ideas on using the Petoi Bittle and Tello Talent 
 
 * Completely remove the device from the Bluetooth on the PC and re-add it. Close the Mind+ application and re-run it.
 * Alternatively, close all COM/Bluetooth ports on the PC. You can clear them using terminal commands, then re-connect the Bittle.
+* Close the Mind+ application, unload the extension, reload it, re-open the application, all those things have at times gottent the dog back to working.
+
+### Misc Issues
+
+* Sometimes the close serial port and quit command doesn't stop the Python program. If that happens, you can still work through it, you'll just have to manually hit stop when the code has finished executing. 
 
 ### Bluetooth Connection Asking for Pin
 
