@@ -53,7 +53,7 @@ Follow the [Voice Command Guide](https://docs.petoi.com/extensible-modules/voice
 
 To see all the options, visit [Play With Bittle X](https://bittle-x.petoi.com/5-play-with-bittle-x).
 
-Block-based code uses the software `Mind+`. More details on that below.
+Block-based code uses the software `Mind+`. The extension repo is at [Petoi_MindPlusLib](https://github.com/PetoiCamp/Petoi_MindPlusLib). It's worth reading through the `README.md` file there. Basic instructions follow.
 
 1. Go to [Mind Plus Petoi Coding Blocks Instructions](https://docs.petoi.com/block-based-programming/petoi-coding-blocks) and follow the instructions. You don't need to do any configuration with the firmware.
    1. If you're coding the Robot Dog, the Bittle X already has all that supported already. Just download the application and get the Petoi Coding Blocks module imported.
