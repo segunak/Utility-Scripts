@@ -43,7 +43,11 @@ Follow the [Voice Command Guide](https://docs.petoi.com/extensible-modules/voice
 1. Speak "Bing-Bing" to switch the Bittle X to English mode (note, you do have to say this in a Chinese accent, or it won't pick up on it) or "Di-Di" to switch to Chinese (Mandarin).
 2. Speak "Play sound" to turn on the audio response or "Be quiet" to turn off the audio response.
 
-## Writing Block-Based Code
+## Coding Controls
+
+To see all the options, visit [Play With Bittle X](https://bittle-x.petoi.com/5-play-with-bittle-x).
+
+Block-based code uses the software `Mind+`. More details on that below.
 
 1. Go to [Mind Plus Petoi Coding Blocks Instructions](https://docs.petoi.com/block-based-programming/petoi-coding-blocks) and follow the instructions. You don't need to do any configuration with the firmware.
    1. If you're coding the Robot Dog, the Bittle X already has all that supported already. Just download the application and get the Petoi Coding Blocks module imported.
