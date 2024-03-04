@@ -8,6 +8,7 @@ To setup the Petoi Bittle:
 
 Make sure you can connect to and upload/update firmware on the Petoi Bittle. Follow the instructions below.
 
+* [Petoi Bittle X User Manual](https://bittle-x.petoi.com/)
 * [Getting Started with Petoi Bittle](https://docs.petoi.com/getting-started-guide)
 * [Installing the Petoi Desktop App](https://docs.petoi.com/desktop-app/introduction)
 * [Uploading/Updating Firmware](https://docs.petoi.com/desktop-app/firmware-uploader)
