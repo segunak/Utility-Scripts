@@ -11,13 +11,13 @@ To setup the Petoi Bittle make sure you can connect to and upload/update firmwar
 
 ## Firmware Updates and Configuration
 
-Use the resources below for advanced actions such as configuring the Bittle X and updating the firmware. 
+Use the resources below for advanced actions such as configuring the Bittle X and updating the firmware.
 
 * [Installing the Petoi Desktop App](https://docs.petoi.com/desktop-app/introduction)
 * [Uploading/Updating Firmware](https://docs.petoi.com/desktop-app/firmware-uploader)
 * [Setup BiBoard Configuration Development Environment](https://docs.petoi.com/biboard/biboard-v0#id-3.2.1-set-up-esp32-development-environment)
 
-The Bittle X uses `BiBoard_V0_1` or `BiBoard_V0_2` as the board version and the `ESP32` as the [development module](https://github.com/PetoiCamp/OpenCatEsp32). Here are the firmware options I've used before that worked for upgrading the firmware on a brand new Bittle X (March 2024).
+The Bittle X uses `BiBoard_V0_1` or `BiBoard_V0_2` as the board version and the `ESP32` as the [development module](https://github.com/PetoiCamp/OpenCatEsp32). Here are the firmware options I've used before that worked for upgrading the firmware on a brand new Bittle X (March 2024). I used `BiBoard_V0_2`, which from the code in the [OpenCatEsp32](https://github.com/PetoiCamp/OpenCatEsp32) repo seems to be their preferred default. So as a rule, use the latest (highest versioned) number of the board you can when updating firmware.
 
 ![BittleImage](./FirmwareUpload.png)
 
