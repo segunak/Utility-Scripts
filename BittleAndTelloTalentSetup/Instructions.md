@@ -38,6 +38,8 @@ The `OpenCat.h` file in the repo [OpenCatEsp32](https://github.com/PetoiCamp/Ope
 
 ## Voice Commands
 
+[List of Commands](https://docs.google.com/spreadsheets/d/1Lr6Cd1T-H9sSdUi_bI-OeMClkVOKjTQM/edit#gid=657477338)
+
 Follow the [Voice Command Guide](https://docs.petoi.com/extensible-modules/voice-command-module). A preconfigured Bittle X can do a lot by voice. For programming workshops with students though, the dog always listening and randomly doing things can be annoying. Here are the instructions for controlling voice input (on/off). Each Bittle X box also comes with a printed list of voice commands for reference.
 
 1. Speak "Bing-Bing" to switch the Bittle X to English mode (note, you do have to say this in a Chinese accent, or it won't pick up on it) or "Di-Di" to switch to Chinese (Mandarin).
