@@ -27,6 +27,7 @@ Things to do when setting up a Bittle X.
 
 1. Change the volume to be way lower. Serial command `b[0-20]`.
 2. Change the voice command type to English. It's not by default. That is changed in `OpenCatEsp32.ino` when configuring the board in Arduino. It's a definition in that file. After changing it, you upload to the board.
+3. Deactive the Gyroscope function. This is what causes the dog to freak out when you pick it up as it's trying to self-balance. To do this, you need to upload the latest sketch from [OpenCatEsp32](https://github.com/PetoiCamp/OpenCatEsp32). When doing so, comment out the line `#define GYRO_PIN` in `OpenCat.h`. This should cause areas where `#ifdef GYRO_PIN` is being used in the code to be skipped.
 
 ![BittleImage](./FirmwareUpload.png)
 
