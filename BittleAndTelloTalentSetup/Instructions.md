@@ -23,6 +23,10 @@ The Bittle X uses `BiBoard_V0_1` or `BiBoard_V0_2` as the board version and the 
 
 ## Serial Monitor Configuration
 
+[Serial Protocol](https://docs.petoi.com/apis/serial-protocol)
+
+Note: If you're playing around in Arduino, open the file `OpenCatEsp32.ino` in Arudunio from the [OpenCatEsp32](https://github.com/PetoiCamp/OpenCatEsp32) repo as your starting spot.
+
 The `OpenCat.h` file in the repo [OpenCatEsp32](https://github.com/PetoiCamp/OpenCatEsp32) tells you what the serial commands are for configuring the board. Follow the instructions at [Upload Sketch](https://docs.petoi.com/arduino-ide/upload-sketch-for-biboard) for how to get set up in Arduino for sending commands and configuring the board. Then check the `OpenCat.h` file for the latest commands. You can feed the contents of the file to ChatGPT to get back a list of current serial commands if you don't want to read through the whole thing. Here's me using the `b[0-10]` command to change the volume.
 
 ![SerialMonitor](./ChangingVolumeWithSerialMonitor.png)
