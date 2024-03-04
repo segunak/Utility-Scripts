@@ -65,6 +65,8 @@ Block-based code uses the software `Mind+`. The extension repo is at [Petoi_Mind
 
 Use the resources below to get ideas on using the Petoi Bittle and Tello Talent for workshops.
 
+* [Premade Mind+ Presentations](https://drive.google.com/drive/folders/15SPPlv3NZT9py-m5t_u-f8bbWsAl8HT4)
+* [Premade Mind+ Projects](https://drive.google.com/drive/folders/1keMcLnPm1J1E0igdBSIJomEM20GjZBT9)
 * [Petoi Curriculum](https://www.petoi.com/pages/free-quadruped-robotics-curriculum-scratch-coding)
 * [Petoi Bittle Community](https://www.petoi.com/pages/petoi-open-source-extensions-user-demos-and-hacks)
 * [Iowa State Bittle Course](https://www.cyio.iastate.edu/robotics/)
