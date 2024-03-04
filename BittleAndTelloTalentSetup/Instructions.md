@@ -71,6 +71,12 @@ Use the resources below to get ideas on using the Petoi Bittle and Tello Talent 
 * [Petoi Bittle Community](https://www.petoi.com/pages/petoi-open-source-extensions-user-demos-and-hacks)
 * [Iowa State Bittle Course](https://www.cyio.iastate.edu/robotics/)
 
+## Random Notes
+
+* The serial command `kbf` should be backflip and `kff` frontflip based on [Serial Protocol](https://docs.petoi.com/apis/serial-protocol). When using Mind+, the backflip and frontflip skills do not show up in the "perform skill" drop-down list. I was able to get a backflip and frontflip to occur using the command below. You can straight access serial commands using this for workshops where the students are doing block-based programming.
+
+![BackflipAyo](./BackflipInMindPlus.png)
+
 ## Troubleshooting
 
 ### Petoi Bittle Not Responding To Commands
