@@ -19,6 +19,11 @@ Use the resources below for advanced actions such as configuring the Bittle X an
 
 The Bittle X uses `BiBoard_V0_1` or `BiBoard_V0_2` as the board version and the `ESP32` as the [development module](https://github.com/PetoiCamp/OpenCatEsp32). Here are the firmware options I've used before that worked for upgrading the firmware on a brand new Bittle X (March 2024). I used `BiBoard_V0_2`, which from the code in the [OpenCatEsp32](https://github.com/PetoiCamp/OpenCatEsp32) repo seems to be their preferred default. So as a rule, use the latest (highest versioned) number of the board you can when updating firmware.
 
+Things to do when setting up a Bittle X.
+
+1. Change the volume to be way lower. Serial command `b[0-20]`.
+2. Change the voice command type to English. It's not by default. That is changed in `OpenCatEsp32.ino` when configuring the board in Arduino. It's a definition in that file. After changing it, you upload to the board.
+
 ![BittleImage](./FirmwareUpload.png)
 
 ## Serial Monitor Configuration
@@ -30,6 +35,13 @@ Note: If you're playing around in Arduino, open the file `OpenCatEsp32.ino` in A
 The `OpenCat.h` file in the repo [OpenCatEsp32](https://github.com/PetoiCamp/OpenCatEsp32) tells you what the serial commands are for configuring the board. Follow the instructions at [Upload Sketch](https://docs.petoi.com/arduino-ide/upload-sketch-for-biboard) for how to get set up in Arduino for sending commands and configuring the board. Then check the `OpenCat.h` file for the latest commands. You can feed the contents of the file to ChatGPT to get back a list of current serial commands if you don't want to read through the whole thing. Here's me using the `b[0-10]` command to change the volume.
 
 ![SerialMonitor](./ChangingVolumeWithSerialMonitor.png)
+
+## Voice Commands
+
+Follow the [Voice Command Guide](https://docs.petoi.com/extensible-modules/voice-command-module). A preconfigured Bittle X can do a lot by voice. For programming workshops with students though, the dog always listening and randomly doing things can be annoying. Here are the instructions for controlling voice input (on/off). Each Bittle X box also comes with a printed list of voice commands for reference.
+
+1. Speak "Bing-Bing" to switch the Bittle X to English mode (note, you do have to say this in a Chinese accent, or it won't pick up on it) or "Di-Di" to switch to Chinese (Mandarin).
+2. Speak "Play sound" to turn on the audio response or "Be quiet" to turn off the audio response.
 
 ## Writing Block-Based Code
 
