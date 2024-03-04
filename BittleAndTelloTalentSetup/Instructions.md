@@ -75,7 +75,7 @@ Use the resources below to get ideas on using the Petoi Bittle and Tello Talent 
 
 * Completely remove the device from the Bluetooth on the PC and re-add it. Close the Mind+ application and re-run it.
 * Alternatively, close all COM/Bluetooth ports on the PC. You can clear them using terminal commands, then re-connect the Bittle.
-* Close the Mind+ application, unload the extension, reload it, re-open the application, all those things have at times gottent the dog back to working.
+* Close the Mind+ application, unload the extension, reload it, and re-open the application, all those things have at times gotten the dog back to working.
 
 ### Misc Issues
 
@@ -84,5 +84,5 @@ Use the resources below to get ideas on using the Petoi Bittle and Tello Talent 
 ### Bluetooth Connection Asking for Pin
 
 * If you're being asked to confirm a pin, or enter a pin, first read [this article](https://docs.petoi.com/communication-modules/dual-mode-bluetooth) to make sure your issue isn't solvable with the guide.
-* If you're still having issues, note that each Petoi Bittle has two bluetooth signatures it sends off. For example, `BittleA0` and `BittleA0_SSP` coming from the same dog. I was once connecting to the `_SSP` one and was able to get past the pin confirmation prompt by connecting to the `BittleA0` one and it worked with Mind+. So alternate between the Bluetooth options if stuck.
+* If you're still having issues, note that each Petoi Bittle has two bluetooth signatures it sends off. For example, `BittleA0` and `BittleA0_SSP` coming from the same dog. I was once connecting to the `_SSP` one and was able to get past the pin confirmation prompt by connecting to the `BittleA0` one and it worked with Mind+. So alternate between the Bluetooth options if stuck. The SSP stands for Serial Port Profile, which I learned by reading through the code at [OpenCat.h](https://github.com/PetoiCamp/OpenCatEsp32/blob/main/src/OpenCat.h).
   
