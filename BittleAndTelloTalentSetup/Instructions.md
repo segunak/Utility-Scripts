@@ -58,6 +58,7 @@ Block-based code uses the software `Mind+`. More details on that below.
 
 Use the resources below to get ideas on using the Petoi Bittle and Tello Talent for workshops.
 
+* [Petoi Curriculum](https://www.petoi.com/pages/free-quadruped-robotics-curriculum-scratch-coding)
 * [Petoi Bittle Community](https://www.petoi.com/pages/petoi-open-source-extensions-user-demos-and-hacks)
 * [Iowa State Bittle Course](https://www.cyio.iastate.edu/robotics/)
 
