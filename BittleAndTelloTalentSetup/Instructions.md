@@ -4,18 +4,28 @@ Here's everything you need to do to be able to code the Petoi Bittle robot dog a
 
 ## Setting Up The Devices
 
-To setup the Petoi Bittle:
-
-Make sure you can connect to and upload/update firmware on the Petoi Bittle. Follow the instructions below.
+To setup the Petoi Bittle make sure you can connect to and upload/update firmware on the Petoi Bittle. Follow the instructions below.
 
 * [Petoi Bittle X User Manual](https://bittle-x.petoi.com/)
 * [Getting Started with Petoi Bittle](https://docs.petoi.com/getting-started-guide)
+
+## Firmware Updates and Configuration
+
+Use the resources below for advanced actions such as configuring the Bittle X and updating the firmware. 
+
 * [Installing the Petoi Desktop App](https://docs.petoi.com/desktop-app/introduction)
 * [Uploading/Updating Firmware](https://docs.petoi.com/desktop-app/firmware-uploader)
+* [Setup BiBoard Configuration Development Environment](https://docs.petoi.com/biboard/biboard-v0#id-3.2.1-set-up-esp32-development-environment)
 
-Note, the Bittle X uses `BiBoard_V0_1` or `BiBoard_V0_2` as the board version and the `ESP32` as the [development module](https://github.com/PetoiCamp/OpenCatEsp32). Here are the firmware options I've used before that worked for upgrading the firmware on a brand new Bittle X (March 2024).
+The Bittle X uses `BiBoard_V0_1` or `BiBoard_V0_2` as the board version and the `ESP32` as the [development module](https://github.com/PetoiCamp/OpenCatEsp32). Here are the firmware options I've used before that worked for upgrading the firmware on a brand new Bittle X (March 2024).
 
 ![BittleImage](./FirmwareUpload.png)
+
+## Serial Monitor Configuration
+
+The `OpenCat.h` file in the repo [OpenCatEsp32](https://github.com/PetoiCamp/OpenCatEsp32) tells you what the serial commands are for configuring the board. Follow the instructions at [Upload Sketch](https://docs.petoi.com/arduino-ide/upload-sketch-for-biboard) for how to get set up in Arduino for sending commands and configuring the board. Then check the `OpenCat.h` file for the latest commands. You can feed the contents of the file to ChatGPT to get back a list of current serial commands if you don't want to read through the whole thing. Here's me using the `b[0-10]` command to change the volume.
+
+![SerialMonitor](./ChangingVolumeWithSerialMonitor.png)
 
 ## Writing Block-Based Code
 
