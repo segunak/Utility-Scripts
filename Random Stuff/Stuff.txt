@@ -1,0 +1,53 @@
+InitDateDifference
+dateDifference(convertTimeZone(utcNow(), 'UTC', 'Eastern Standard Time'), '2024-06-22')
+
+
+
+Basic
+
+Hello! We are @{int(split(dateDifference(convertTimeZone(utcNow(), 'UTC', 'Eastern Standard Time', 'yyyy-MM-dd'), '2024-06-22'), '.')[0])} days away from Event Name!
+
+
+Basic With Target Date and Time
+
+Hello! We are:
+
+@{int(split(variables('DateDifference'),'.')[0])} days,
+
+@{int(split(split(variables('DateDifference'),'.')[1],':')[0])} hours,
+ 
+@{int(split(split(variables('DateDifference'),'.')[1],':')[1])} minutes, 
+
+and @{int(split(split(variables('DateDifference'),'.')[1],':')[2])} seconds 
+
+away from Event Name!
+
+Formatted Basic
+Hello! We are <span style="color:red;font-weight:bold">@{int(split(dateDifference(convertTimeZone(utcNow(), 'UTC', 'Eastern Standard Time', 'yyyy-MM-dd'), '2024-06-22'), '.')[0])}</span> days away from Event Name!
+
+FOrmatted Detailes
+
+Hello! We are:<div style="color:red; font-weight:bold">
+
+@{int(split(variables('DateDifference'),'.')[0])} days,
+
+@{int(split(split(variables('DateDifference'),'.')[1],':')[0])} hours,
+ 
+@{int(split(split(variables('DateDifference'),'.')[1],':')[1])} minutes, 
+
+and @{int(split(split(variables('DateDifference'),'.')[1],':')[2])} seconds 
+
+</div> away from Event Name!
+
+
+
+int(
+    split(
+        dateDifference(
+            convertTimeZone(utcNow(), 'UTC', 'Eastern Standard Time', 'yyyy-MM-dd'), 
+            '2024-03-22'
+        ), 
+    '.')[0]
+)
+
+int(split(dateDifference(convertTimeZone(utcNow(), 'UTC', 'Eastern Standard Time', 'yyyy-MM-dd'), '2024-03-22'), '.')[0])
